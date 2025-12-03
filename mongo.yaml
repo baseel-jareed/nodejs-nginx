@@ -85,14 +85,15 @@ services:
       - app1
       - app2
       - app3
+      - mongo-express
 volumes:
   mongo-data:
     driver: local
 secrets:
   db_password:
-    file: ./secrets/nodeapp/db_pass.txt
+    file: ./secrets/db_pass.txt
   db_admin:
-    file: ./secrets/nodeapp/db_admin.txt
+    file: ./secrets/db_admin.txt
 networks:
   app-network:
     driver: bridge
