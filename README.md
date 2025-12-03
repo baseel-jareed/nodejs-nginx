@@ -19,7 +19,7 @@ db_admin.txt ...... write in it the desired database admin username
 
 db_pass.txt  ...... write in it the desired database admin password
 
-or simply from the MyApp directory in terminal:
+or simply from the nodejs-nginx-main directory in terminal:
 
 echo "your_admin_username" > secrets/db_admin.txt
 
@@ -38,25 +38,25 @@ Node.js is optional unless running the app outside containers
 
 ## Running The Project
 
-in terminal from MyApp directory:
+in terminal from nodejs-nginx-main directory:
 
 docker compose up --build -d
 
 ### Service access
 
-in terminal from MyApp directory:
+in terminal from nodejs-nginx-main directory:
 
 App (via Nginx) -> http://localhost:8080
 Mongo Express(via Nginx) -> http://localhost:8081
 
 ### Stopping the services 
 
-in terminal from MyApp directory:
+in terminal from nodejs-nginx-main directory:
 
 docker compose down 
 
 ### Removing the containers with the volumes
 
-in terminal from MyApp directory:
+in terminal from nodejs-nginx-main directory:
 
 docker compose down -v
