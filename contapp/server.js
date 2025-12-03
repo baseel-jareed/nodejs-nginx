@@ -69,8 +69,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile-picture', (req, res) => {
-  const img = fs.readFileSync(path.join(__dirname, "images/profile-1.jpg"));
-  res.writeHead(200, { 'Content-Type': 'image/jpg' });
+  const img = fs.readFileSync(path.join(__dirname, "images/messi.png"));
+  res.writeHead(200, { 'Content-Type': 'image/png' });
   res.end(img, 'binary');
 });
 
