@@ -1,0 +1,7 @@
+node_modules/
+
+nginx-certs/
+
+db_admin.txt
+db_pass.txt
+
